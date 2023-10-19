@@ -1,0 +1,96 @@
+*{
+ margin:0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+.image-generator{
+ position: relative;
+ height: 40vh;
+ background: url(images/bg.jpg);
+ background-size: cover;
+ background-position: center;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+
+.image-generator::before{
+ content: "";
+ position: absolute;
+ left: 0;
+ top: 0;
+ width: 100%;
+ height: 100%;
+ background: #121212;
+ opacity: 0.5;
+}
+
+.image-generator .content{
+ position: relative;
+ color: #fff;
+ padding: 0 15px;
+ max-width: 768px;
+ text-align: center;
+}
+
+.image-generator h1{
+ font-size: 2.5rem;
+ font-weight: 700;
+}
+
+.image-generator h1 {
+ font-size: 1.35rem;
+ margin-top: 10px;
+}
+
+.image-generator .generate-form{
+ height: 56px;
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ background: #fff;
+ border-radius: 30px;
+ padding: 6px;
+ margin: 45px 0 15px;
+}
+
+.generate-form .prompt-input {
+ width: 100%;
+ height: 100%;
+ font-size: 1rem;
+ outline: none;
+ border: none;
+ background: none;
+ padding: 0 17px;
+}
+
+.generate-form .controls {
+ display: flex;
+ height: 100%;
+ gap: 15px;
+}
+
+.generate-form .img-quantity{
+ outline: none;
+ border: none;
+ background: none;
+ font-size: 1rem;
+}
+
+.generate-form .generate-btn{
+ font-size: 1rem;
+ outline: none;
+ border: none;
+ color: #fff;
+ font-size: 1rem;
+ font-weight: 500;
+ padding: 0 25px;
+ border-radius: 30px;
+ background: #4949E7;
+}
