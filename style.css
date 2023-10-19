@@ -94,3 +94,14 @@
  border-radius: 30px;
  background: #4949E7;
 }
+
+.image-gallery .img-card{
+ width: 285px;
+ aspect-ratio: 1 / 1;
+}
+
+.image-gallery .img-card img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
