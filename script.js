@@ -1,6 +1,13 @@
  const generateform = document.querySelector(".generate-form");
  const generateform = document.querySelector(".generate-form");
 
+ const generateAIImages = async(userPrompt, userImgQuantity) => {
+    try{
+          const response = await fetch("https://api.openai.com/v1/images/generations")
+    }catch(error){
+      console.log(error);
+    }
+ }
 
  const handleFormSubmission = (e) => {
   e.preventDefault();
@@ -19,5 +26,6 @@
   ).join("")
 
   imageGallery.innerHTML = imgCardMarkup;
+  generateAIImages(userPrompt, userImgQuantity);
  }
  generateform.addEventListener("submit", handleFormSubmission);
